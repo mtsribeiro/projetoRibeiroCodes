@@ -1,13 +1,14 @@
-const http = require("http");
-const express = require("express");
+const express = require('express');
 const app = express();
+const path = require('path');
 
-var porta = 9000
+const port = 9000;
 
-http.createServer(express).listen(porta, () => 
-console.log(`http://localhosta:${porta}`
-));
 
-app.get("/", function(req, res) {
-    res.send("<h1>Servidor rodando com ExpressJS</h1>");
+app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, '../ui/index.html'))
+})
+
+app.listen(port, () => {
+  console.log(`Servidor web em execução: http://localhost:${port}`);
 });
