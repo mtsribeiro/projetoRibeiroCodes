@@ -3,10 +3,20 @@
     overflow-x: hidden;
 }
 
-.menu-baixo {
+.menu-topo {
     position: fixed; 
     z-index: 999;
     width: 100%;
+    padding-right: 12px;
+}
+
+.menu-topo .nav-link {
+    color: #fff;
+    font-size: 14pt;
+}
+
+.menu-topo .nav-link:hover {
+    border-bottom: solid 1px #fff;
 }
 
 #particle-canvas {
@@ -27,4 +37,6 @@
 
 .titulo-empresa {
     font-weight: 200;
+    font-size: 32pt;
+    overflow: hidden;
 }
