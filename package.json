@@ -1,11 +1,10 @@
 {
   "name": "projetoribeirocodes",
   "version": "1.0.0",
-  "description": "",
-  "main": "server.js",
+  "main": "server/server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node server/server.js"
   },
   "repository": {
     "type": "git",
@@ -17,6 +16,7 @@
     "url": "https://github.com/mtsribeiro/projetoRibeiroCodes/issues"
   },
   "homepage": "https://github.com/mtsribeiro/projetoRibeiroCodes#readme",
+  "description": "",
   "dependencies": {
     "express": "^4.18.1",
     "fs": "^0.0.1-security",
